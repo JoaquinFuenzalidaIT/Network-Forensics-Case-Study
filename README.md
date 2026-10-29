@@ -1,77 +1,42 @@
-Network Forensics Investigation
-Overview
-This project documents the analysis of a network capture related to a suspected data exfiltration incident. The objective was to identify indicators of compromise, investigate suspicious network activity, and determine how sensitive information was transferred outside the organization.
+# FRA Network Forensics Challenge
 
-The investigation was performed using Wireshark and followed a structured network forensics methodology.
+## Project Summary
 
-Scenario
-A fictitious aerospace company suspected that an employee was leaking confidential information to an external party.
+Network forensic investigation performed as part of a cybersecurity challenge published by FRA (Swedish National Defence Radio Establishment).
 
-Initial indicators suggested that the employee may have been collaborating with a threat actor planning unauthorized access to company assets.
+The objective was to analyze a packet capture (.pcap) file and investigate a suspected data exfiltration incident by identifying suspicious network activity, authentication events, and file transfers.
 
-The task was to analyze captured network traffic, identify suspicious communications, and investigate potential data exfiltration techniques.
+## Activities
 
-Objectives
-Analyze network traffic captures (.pcap)
-Identify suspicious protocols and communications
-Investigate authentication activity
-Detect file transfer operations
-Analyze potential data exfiltration channels
-Document findings and indicators of compromise
-Tools Used
-Wireshark
-Network Traffic Analysis
-Protocol Inspection
-TCP Stream Analysis
-UDP Stream Analysis
-Packet Analysis
-Key Findings
-FTP Authentication
-The investigation identified FTP credentials transmitted in cleartext.
+- Analyzed network traffic using Wireshark
+- Investigated FTP authentication and file transfers
+- Identified cleartext credentials
+- Examined suspicious UDP communications
+- Investigated potential data exfiltration techniques
+- Documented findings and evidence
 
-Username: ftp
+## Tools
 
-Password: sommar2014
+- Wireshark
+- FTP Analysis
+- TCP/UDP Stream Analysis
+- Packet Inspection
+- Network Traffic Analysis
 
-File Transfer Activity
-The following file upload operation was identified:
+## Skills Demonstrated
 
-STOR msg.txt
-This indicated a successful file transfer to a remote system.
+- Network Forensics
+- Incident Investigation
+- Protocol Analysis
+- Threat Detection
+- Traffic Analysis
+- Security Documentation
 
-Suspicious Network Activity
-Additional analysis revealed a significant volume of UDP traffic on port 31337.
+## Author
 
-Observations included:
+**Joaquín Fuenzalida**
 
-Large outbound data transfers
-Chunked JSON-formatted payloads
-Encoded hexadecimal data
-Characteristics consistent with data exfiltration techniques
-Skills Demonstrated
-Network Traffic Analysis
-Network Forensics
-Incident Investigation
-Protocol Analysis
-Threat Hunting
-Digital Forensics
-Wireshark Investigation
-Security Documentation
-Lessons Learned
-This project provided practical experience in:
-
-Identifying insecure communication protocols
-Investigating authentication events
-Following and analyzing network streams
-Detecting anomalous network activity
-Documenting forensic findings
-Applying structured investigative techniques
-Author
-Joaquin Nicolas Fuenzalida Robledo
-
-IT Security Student
-
-Focused on cybersecurity, network security, incident response, and digital forensics.
+IT Security Student | Cybersecurity 
 
 
 
